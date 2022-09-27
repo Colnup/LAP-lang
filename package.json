@@ -1,0 +1,25 @@
+{
+  "name": "LAP-lang",
+  "displayName": "LAP Language support",
+  "description": "Provides tools for LAP programming",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.71.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "lap",
+      "aliases": ["LAP", "lap"],
+      "extensions": [".lap"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "lap",
+      "scopeName": "source.lap",
+      "path": "./syntaxes/lap.tmLanguage.json"
+    }]
+  }
+}
